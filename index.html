@@ -17,6 +17,16 @@
             font-family: 'TriForceFont', sans-serif !important;
             font-size: 3.0rem;
         }
+
+        a {
+        color: #007cba; 
+        text-decoration: none; 
+        }
+
+        a:hover {
+        color: #bb0000;
+        text-decoration: none; 
+        }
     </style>
 </head>
 
@@ -66,6 +76,10 @@
     <ul>
         <div style="height:170px;width:fit-content;overflow:auto;background:#FFFFFF;">
             <li>
+                <p style="line-height: 1.5;">[2025/01/28] Our <a
+                            href="https://arxiv.org/pdf/2501.06122" target="blank">NDOB-Based Controller</a> has been accepted by <img src="assets/img/ICRA-ALT.jpg" height="20px" style="vertical-align:middle"> ICRA 2025!  See you in Atlanta!</p>
+            </li>
+            <li>
                 <p style="line-height: 1.5;">[2024/06/20] Graduate from <a
                             href="https://www.sysu.edu.cn/sysuen" target="blank">Sun Yat-sen University</a> <img src="assets/img/sysu_logo.svg" height="20px" style="vertical-align:middle"> 
                             with a bachelor degree, recognized as an Outstanding Graduate.</p>
@@ -80,8 +94,8 @@
             </li>
         </div>
     </ul>
-    <!-- <h2>Publications</h2> -->
-    <!-- <style>
+    <h2>Publications</h2>
+    <style>
         .button {
             border: none;
             background-color: transparent;
@@ -101,51 +115,57 @@
             text-decoration: underline;
             cursor: pointer;
             outline: none;
-            color: #089797;
+            color: #004fce;
+        }
+        #selected_publications table:hover{
+            background-color: #ffffd0; 
+        }
+        #full_publications table:hover {
+            background-color: #ffffd0; 
         }
     </style>
     <p>
         <button class="button selected-button" id="button1" onclick="showSelectedPublications(); selectButton('button1')">Representative Papers</button> / 
         <button class="button" id="button2" onclick="showFullPublications(); selectButton('button2')">Full Papers by Year</button>.
-        Selected papers are <span style="background-color: #ffffd0;">highlighted</span>.
     </p>
     <div id="selected_publications">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tr onmouseout="triforce_stop()" onmouseover="triforce_start()" bgcolor="#ffffd0">
+            <tr onmouseout="triforce_stop('whole_body_rep')" onmouseover="triforce_start('whole_body_rep')">
                 <td style="padding:10px;width:25%;vertical-align:middle">
                     <div>
-                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="triforce_image">
+                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="whole_body_rep">
                             <video loop autoplay muted width="400px" >
-                                <source src="assets/video/TriForce.mp4" type="video/mp4">
+                                <source src="assets/video/whole_body.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
                         <div>
-                            <img src="assets/img/TriForce.png" alt="TriForce", style="width: 400px; padding-top:40px; padding-bottom: 25px;">
+                            <img src="assets/img/whole_body.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
                         </div>
                     </div>
                     <script type="text/javascript">
-                        function triforce_start() {
-                            document.getElementById('triforce_image').style.opacity = "1";
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
                         }
-
-                        function triforce_stop() {
-                            document.getElementById('triforce_image').style.opacity = "0";
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
                         }
                         triforce_stop()
                     </script>
                 </td>
+                
+
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://infini-ai-lab.github.io/TriForce/" target="blank"><b><span class="TriForceFont" style="display: inline; font-size: 15pt;">*</span>TriForce: Lossless Acceleration of Long Sequence Generation with Hierarchical Speculative Decoding</b></a>
+                    <b>Whole-Body Integrated Motion Planning for Aerial Manipulators</b>
                     <br>
                     <br>
-                    <strong>Hanshi Sun</strong>, <a href="https://dreaming-panda.github.io/">Zhuoming Chen</a>, <a href="https://xinyuyang.me/">Xinyu Yang</a>, <a href="https://yuandong-tian.com/">Yuandong Tian</a>, and <a href="https://www.andrew.cmu.edu/user/beidic/">Beidi Chen</a><br>
-                    <p><i>Conference on Language Modeling (COLM)</i>, 2024</p><br>
+                    Weiliang Deng, Hongming Chen, <strong>Biyu Ye</strong>, Haoran Chen, and Ximin Lyu<br>
+                    <p><i>IEEE Transactions on Robotics (T-RO)</i>, 2025 (under review)</p><br>
                     <p>
-                        <a href="https://infini-ai-lab.github.io/TriForce/" target="blank">website</a> / <a href="https://arxiv.org/abs/2404.11912.pdf" target="blank">arXiv</a> / <a href="https://github.com/infini-ai-lab/TriForce/" target="blank">code <img src="https://img.shields.io/github/stars/infini-ai-lab/TriForce?style=social&label=Github+Stars" style="vertical-align:middle"></a> / <a href="https://youtu.be/vRAaAyjr6Jo" target="blank">demo</a> / <a href="bibtex/sun2024triforce.txt", target="blank">bibtex</a> <a href="https://www.semanticscholar.org/paper/TriForce%3A-Lossless-Acceleration-of-Long-Sequence-Sun-Chen/d0deaec3e1f74701ac43600d9e64c5c969be7391"><img src="https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/d0deaec3e1f74701ac43600d9e64c5c969be7391?fields=citationCount;&style=flat-square&logo=semanticscholar&logoColor=black&labelColor=b6fcfa&color=b6fcfa" alt="citation" style="vertical-align:middle"></a>
+                        <a href="https://fisheep9.github.io/" target="blank">website</a> / <a href="https://arxiv.org/pdf/2501.06493" target="blank">arXiv</a> / <a href="https://github.com/SYSU-HILAB" target="blank">code</a> / <a href="https://www.bilibili.com/video/BV1pxcHebEqr/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
                     </p>
                     <br>
-                    <p>Training-free Lossless Long Sequence Generation Acceleration</p>
+                    <p>A Whole-body Motion Planner for Aerial Manipulator Grasping</p>
                 </td>
             </tr>
             <tr>&nbsp</tr>
@@ -153,22 +173,43 @@
             <tr>&nbsp</tr>
         </table>
         <table>
-            <tr>
+            <tr onmouseout="triforce_stop('ndob_rep')" onmouseover="triforce_start('ndob_rep')">
                 <td style="padding:10px;width:25%;vertical-align:middle">
-                    <img src="assets/img/BMAD.png" width="400px">
+                    <div style="position: relative;">
+                        <div style="opacity: 0; position: absolute; top: -22px; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="ndob_rep">
+                            <video loop autoplay muted width="400px" >
+                                <source src="assets/video/ndob.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/ndob.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
                 </td>
+
+
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                    <b>BMAD: Benchmarks for Medical Anomaly Detection
+                    <b>NDOB-Based Control of a UAV with Delta-Arm Considering Manipulator Dynamics
                     </b> <br>
                     <br>
-                    Jinan Bao, <strong>Hanshi Sun</strong>, Hanqiu Deng, Zhaoxiang Zhang, and <a href="https://www.ece.ualberta.ca/~xingyu/index.html">Xingyu Li</a>
+                    Hongming Chen, <strong>Biyu Ye</strong>, Xianqi Liang, Weiliang Deng, and Ximin Lyu
                     <br>
-                    <p><i>Computer Vision and Pattern Recognition (CVPR) Workshop</i>, 2024</p><br>
+                    <p><i>IEEE International Conferenceon Robotics and Automation (ICRA)</i>, 2025</p><br>
                     <p>
-                        <a href="https://arxiv.org/pdf/2306.11876.pdf" target="blank">arXiv</a> / <a href="https://github.com/DorisBao/BMAD" target="blank">code <img src="https://img.shields.io/github/stars/DorisBao/BMAD?style=social&label=Github+Stars" style="vertical-align:middle"></a> / <a href="bibtex/bao2024bmad.txt", target="blank">bibtex</a> <a href="https://www.semanticscholar.org/paper/BMAD%3A-Benchmarks-for-Medical-Anomaly-Detection-Bao-Sun/d935b0570f3789c96ea34a8609d78e8699f7bc68"><img src="https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/d935b0570f3789c96ea34a8609d78e8699f7bc68?fields=citationCount;&style=flat-square&logo=semanticscholar&logoColor=black&labelColor=b6fcfa&color=b6fcfa" alt="citation" style="vertical-align:middle"></a>
+                        <a href="https://fisheep9.github.io/" target="blank">website</a> / <a href="https://arxiv.org/pdf/2501.06122" target="blank">arXiv</a> / <a href="https://github.com/SYSU-HILAB" target="blank">code</a> / <a href="https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
                     </p>
                     <br>
-                    <p>This benchmark encompasses six reorganized datasets from five medical domains (i.e. brain MRI, liver CT, retinal OCT, chest X-ray, and digital histopathology) and three key evaluation metrics, and includes a total of fourteen state-of-the-art AD algorithms.</p>
+                    <p>Proposed an NDOB-based controller for UAV with delta-arm, enhancing agility and achieving millimeter-level precision through disturbance compensation and high-pass filtering.</p>
                 </td>
             </tr>
             <tr>&nbsp</tr>
@@ -178,41 +219,41 @@
     </div>
     <div id="full_publications" style="display: none;">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tr onmouseout="triforce_stop()" onmouseover="triforce_start()" bgcolor="#ffffd0">
+            <tr onmouseout="triforce_stop('whole_body_full')" onmouseover="triforce_start('whole_body_full')">
                 <td style="padding:10px;width:25%;vertical-align:middle">
                     <div>
-                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="triforce_image">
+                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="whole_body_full">
                             <video loop autoplay muted width="400px" >
-                                <source src="assets/video/TriForce.mp4" type="video/mp4">
+                                <source src="assets/video/whole_body.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
                         <div>
-                            <img src="assets/img/TriForce.png" alt="TriForce", style="width: 400px; padding-top:40px; padding-bottom: 25px;">
+                            <img src="assets/img/whole_body.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
                         </div>
                     </div>
                     <script type="text/javascript">
-                        function triforce_start() {
-                            document.getElementById('triforce_image').style.opacity = "1";
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
                         }
-
-                        function triforce_stop() {
-                            document.getElementById('triforce_image').style.opacity = "0";
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
                         }
                         triforce_stop()
                     </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://infini-ai-lab.github.io/TriForce/" target="blank"><b><span class="TriForceFont" style="display: inline; font-size: 15pt;">*</span>TriForce: Lossless Acceleration of Long Sequence Generation with Hierarchical Speculative Decoding</b></a>
+                    <b>Whole-Body Integrated Motion Planning for Aerial Manipulators</b>
                     <br>
                     <br>
-                    <strong>Hanshi Sun</strong>, <a href="https://dreaming-panda.github.io/">Zhuoming Chen</a>, <a href="https://xinyuyang.me/">Xinyu Yang</a>, <a href="https://yuandong-tian.com/">Yuandong Tian</a>, and <a href="https://www.andrew.cmu.edu/user/beidic/">Beidi Chen</a><br>
-                    <p><i>Conference on Language Modeling (COLM)</i>, 2024</p><br>
+                    Weiliang Deng, Hongming Chen, <strong>Biyu Ye</strong>, Haoran Chen, and Ximin Lyu
+                    <br>
+                    <p><i>IEEE Transactions on Robotics (T-RO)</i>, 2025 (under review)</p><br>
                     <p>
-                        <a href="https://infini-ai-lab.github.io/TriForce/" target="blank">website</a> / <a href="https://arxiv.org/abs/2404.11912.pdf" target="blank">arXiv</a> / <a href="https://github.com/infini-ai-lab/TriForce/" target="blank">code <img src="https://img.shields.io/github/stars/infini-ai-lab/TriForce?style=social&label=Github+Stars" style="vertical-align:middle"></a> / <a href="https://youtu.be/vRAaAyjr6Jo" target="blank">demo</a> / <a href="bibtex/sun2024triforce.txt", target="blank">bibtex</a> <a href="https://www.semanticscholar.org/paper/TriForce%3A-Lossless-Acceleration-of-Long-Sequence-Sun-Chen/d0deaec3e1f74701ac43600d9e64c5c969be7391"><img src="https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/d0deaec3e1f74701ac43600d9e64c5c969be7391?fields=citationCount;&style=flat-square&logo=semanticscholar&logoColor=black&labelColor=b6fcfa&color=b6fcfa" alt="citation" style="vertical-align:middle"></a>
+                        <a href="https://fisheep9.github.io/" target="blank">website</a> / <a href="https://arxiv.org/pdf/2501.06493" target="blank">arXiv</a> / <a href="https://github.com/SYSU-HILAB" target="blank">code</a> / <a href="https://www.bilibili.com/video/BV1pxcHebEqr/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
                     </p>
                     <br>
-                    <p>Training-free Lossless Long Sequence Generation Acceleration</p>
+                    <p>A Whole-body Motion Planner for Aerial Manipulator Grasping</p>
                 </td>
             </tr>
             <tr>&nbsp</tr>
@@ -220,29 +261,48 @@
             <tr>&nbsp</tr>
         </table>
         <table>
-            <tr>
+            <tr onmouseout="triforce_stop('ndob_full')" onmouseover="triforce_start('ndob_full')">
                 <td style="padding:10px;width:25%;vertical-align:middle">
-                    <img src="assets/img/BMAD.png" width="400px">
+                    <div style="position: relative;">
+                        <div style="opacity: 0; position: absolute; top: -22px; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="ndob_full">
+                            <video loop autoplay muted width="400px" >
+                                <source src="assets/video/ndob.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/ndob.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
-                    <b>BMAD: Benchmarks for Medical Anomaly Detection
+                    <b>NDOB-Based Control of a UAV with Delta-Arm Considering Manipulator Dynamics
                     </b> <br>
                     <br>
-                    Jinan Bao, <strong>Hanshi Sun</strong>, Hanqiu Deng, Zhaoxiang Zhang, and <a href="https://www.ece.ualberta.ca/~xingyu/index.html">Xingyu Li</a>
+                    Hongming Chen, <strong>Biyu Ye</strong>, Xianqi Liang, Weiliang Deng, and Ximin Lyu
                     <br>
-                    <p><i>Computer Vision and Pattern Recognition (CVPR) Workshop</i>, 2024</p><br>
+                    <p><i>IEEE International Conferenceon Robotics and Automation (ICRA)</i>, 2025</p><br>
                     <p>
-                        <a href="https://arxiv.org/pdf/2306.11876.pdf" target="blank">arXiv</a> / <a href="https://github.com/DorisBao/BMAD" target="blank">code <img src="https://img.shields.io/github/stars/DorisBao/BMAD?style=social&label=Github+Stars" style="vertical-align:middle"></a> / <a href="bibtex/bao2024bmad.txt", target="blank">bibtex</a> <a href="https://www.semanticscholar.org/paper/BMAD%3A-Benchmarks-for-Medical-Anomaly-Detection-Bao-Sun/d935b0570f3789c96ea34a8609d78e8699f7bc68"><img src="https://img.shields.io/badge/dynamic/json?label=citation&query=citationCount&url=https://api.semanticscholar.org/graph/v1/paper/d935b0570f3789c96ea34a8609d78e8699f7bc68?fields=citationCount;&style=flat-square&logo=semanticscholar&logoColor=black&labelColor=b6fcfa&color=b6fcfa" alt="citation" style="vertical-align:middle"></a>
+                        <a href="https://fisheep9.github.io/" target="blank">website</a> / <a href="https://arxiv.org/pdf/2501.06122" target="blank">arXiv</a> / <a href="https://github.com/SYSU-HILAB" target="blank">code</a> / <a href="https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
                     </p>
                     <br>
-                    <p>This benchmark encompasses six reorganized datasets from five medical domains (i.e. brain MRI, liver CT, retinal OCT, chest X-ray, and digital histopathology) and three key evaluation metrics, and includes a total of fourteen state-of-the-art AD algorithms.</p>
+                    <p>Proposed an NDOB-based controller for UAV with delta-arm, enhancing agility and achieving millimeter-level precision through disturbance compensation and high-pass filtering.</p>
                 </td>
             </tr>
             <tr>&nbsp</tr>
             <tr>&nbsp</tr>
             <tr>&nbsp</tr>
         </table>
-        <table>
+        <!-- <table>
             <tr>
                 <td style="padding:10px;width:25%;vertical-align:middle">
                     <img src="assets/img/combat_label_noise.png" width="400px">
@@ -287,7 +347,7 @@
             <tr>&nbsp</tr>
             <tr>&nbsp</tr>
             <tr>&nbsp</tr>
-        </table>
+        </table> -->
     </div>
 
     <script>
@@ -319,7 +379,7 @@
               button2.classList.add('selected-button');
             }
           }
-    </script> -->
+    </script>
 
     <h2>Education</h2>
     <table>
@@ -475,7 +535,7 @@
             </center> -->
         </p>
         <center>
-            <p style="color: darkgray;"> © Biyu Ye 2024</p>
+            <p style="color: darkgray;"> © Biyu Ye 2025</p>
         </center>
 
     </div>
