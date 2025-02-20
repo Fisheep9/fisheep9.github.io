@@ -306,6 +306,48 @@
             <tr>&nbsp</tr>
             <tr>&nbsp</tr>
         </table>
+        <table>
+            <tr onmouseout="triforce_stop('horn_full')" onmouseover="triforce_start('horn_full')">
+                <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div style="position: relative;">
+                        <div style="opacity: 0; position: absolute; top: 0px; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="horn_full">
+                            <video loop autoplay muted width="400px" >
+                                <source src="assets/video/horn.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/horn.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <b>Tailored for vehicle horn: A novel sound source capture method
+                    </b> <br>
+                    <br>
+                    Zirun Wang, Wei Wan, <strong>Biyu Ye</strong>, Jingjun Tan,  and Ming Cai
+                    <br>
+                    <p><i>Journal of Vibration and Control</i>, 2024</p><br>
+                    <p>
+                        <a href="https://journals.sagepub.com/doi/abs/10.1177/10775463241283867" target="blank">paper</a> 
+                    </p>
+                    <br>
+                    <p>This paper presents an innovative vehicle horn sound capture system integrating hardware and algorithms for improved sound recognition and localization. </p>
+                </td>
+            </tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+        </table>
         <!-- <table>
             <tr>
                 <td style="padding:10px;width:25%;vertical-align:middle">
