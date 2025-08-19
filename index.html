@@ -80,6 +80,10 @@
     <ul>
         <div style="height:170px;width:fit-content;overflow:auto;background:#FFFFFF;">
             <li>
+                <p style="line-height: 1.5;">[2025/06/16] Our <a
+                            href="https://arxiv.org/pdf/2506.15539" target="blank">Paper</a> has been accepted by <img src="assets/img/IROS-HZ.png" height="20px" style="vertical-align:middle"> IROS 2025!  See you in Hangzhou!</p>
+            </li>
+            <li>
                 <p style="line-height: 1.5;">[2025/01/28] Our <a
                             href="https://arxiv.org/pdf/2501.06122" target="blank">NDOB-Based Controller</a> has been accepted by <img src="assets/img/ICRA-ALT.jpg" height="20px" style="vertical-align:middle"> ICRA 2025!  See you in Atlanta!</p>
             </li>
@@ -89,7 +93,7 @@
                             with a bachelor degree, recognized as an Outstanding Graduate.</p>
             </li>
             <li>
-                <p style="line-height: 1.5;">[2023/05/28] Awarded First Prize in the National Competition of Transport Science and Technology  <img src="assets/img/nact.jpg" height="20px" style="vertical-align:middle"> for our <a href="" target="blank">project</a>.
+                <p style="line-height: 1.5;">[2023/05/28] Awarded First Prize in the National Competition of Transport Science and Technology  <img src="assets/img/nact.jpg" height="20px" style="vertical-align:middle"> for our <a href="https://journals.sagepub.com/doi/abs/10.1177/10775463241283867" target="blank">project</a>.
                 </p>
             </li>
             <li>
@@ -134,6 +138,49 @@
     </p>
     <div id="selected_publications">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr onmouseout="triforce_stop('workspace_rep')" onmouseover="triforce_start('workspace_rep')">
+                <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div>
+                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="workspace_rep">
+                            <video loop autoplay muted width="400px" >
+                                <source src="assets/video/workspace.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/workspace.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
+                </td>
+                
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <b>Aerial Grasping via Maximizing Delta-Arm Workspace Utilization</b>
+                    <br>
+                    <br>
+                    Hongming Chen, Weiliang Deng, <strong>Biyu Ye</strong>, Yifan Xiong, Zongliang Pan and Ximin Lyu<br>
+                    <p><i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>, 2025</p><br>
+                    <p>
+                        <a href="https://arxiv.org/pdf/2506.15539" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV1JuZpYEE7S/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
+                    </p>
+                    <br>
+                    <p>We present a trajectory planner for aerial grasping that maximizes workspace use by learning the delta arm's feasibility and kinematics.</p>
+                </td>
+            </tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tr onmouseout="triforce_stop('whole_body_rep')" onmouseover="triforce_start('whole_body_rep')">
                 <td style="padding:10px;width:25%;vertical-align:middle">
                     <div>
@@ -166,7 +213,7 @@
                     Weiliang Deng, Hongming Chen, <strong>Biyu Ye</strong>, Haoran Chen, and Ximin Lyu<br>
                     <p><i>IEEE Transactions on Robotics (T-RO)</i>, 2025 (under review)</p><br>
                     <p>
-                        <a href="https://fisheep9.github.io/" target="blank">website</a> / <a href="https://arxiv.org/pdf/2501.06493" target="blank">arXiv</a> / <a href="https://github.com/SYSU-HILAB" target="blank">code</a> / <a href="https://www.bilibili.com/video/BV1pxcHebEqr/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
+                        <a href="https://arxiv.org/pdf/2501.06493" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV1pxcHebEqr/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
                     </p>
                     <br>
                     <p>A Whole-body Motion Planner for Aerial Manipulator Grasping</p>
@@ -210,7 +257,7 @@
                     <br>
                     <p><i>IEEE International Conferenceon Robotics and Automation (ICRA)</i>, 2025</p><br>
                     <p>
-                        <a href="https://fisheep9.github.io/" target="blank">website</a> / <a href="https://arxiv.org/pdf/2501.06122" target="blank">arXiv</a> / <a href="https://github.com/SYSU-HILAB" target="blank">code</a> / <a href="https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
+                        <a href="https://arxiv.org/pdf/2501.06122" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
                     </p>
                     <br>
                     <p>Proposed an NDOB-based controller for UAV with delta-arm, enhancing agility and achieving millimeter-level precision through disturbance compensation and high-pass filtering.</p>
@@ -222,6 +269,49 @@
         </table>
     </div>
     <div id="full_publications" style="display: none;">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr onmouseout="triforce_stop('workspace_full')" onmouseover="triforce_start('workspace_full')">
+                <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div>
+                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="workspace_full">
+                            <video loop autoplay muted width="400px" >
+                                <source src="assets/video/workspace.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/workspace.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
+                </td>
+                
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <b>Aerial Grasping via Maximizing Delta-Arm Workspace Utilization</b>
+                    <br>
+                    <br>
+                    Hongming Chen, Weiliang Deng, <strong>Biyu Ye</strong>, Yifan Xiong, Zongliang Pan and Ximin Lyu<br>
+                    <p><i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>, 2025</p><br>
+                    <p>
+                        <a href="https://arxiv.org/pdf/2506.15539" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV1JuZpYEE7S/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
+                    </p>
+                    <br>
+                    <p>We present a trajectory planner for aerial grasping that maximizes workspace use by learning the delta arm's feasibility and kinematics.</p>
+                </td>
+            </tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+        </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tr onmouseout="triforce_stop('whole_body_full')" onmouseover="triforce_start('whole_body_full')">
                 <td style="padding:10px;width:25%;vertical-align:middle">
@@ -254,7 +344,7 @@
                     <br>
                     <p><i>IEEE Transactions on Robotics (T-RO)</i>, 2025 (under review)</p><br>
                     <p>
-                        <a href="https://fisheep9.github.io/" target="blank">website</a> / <a href="https://arxiv.org/pdf/2501.06493" target="blank">arXiv</a> / <a href="https://github.com/SYSU-HILAB" target="blank">code</a> / <a href="https://www.bilibili.com/video/BV1pxcHebEqr/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
+                        <a href="https://arxiv.org/pdf/2501.06493" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV1pxcHebEqr/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
                     </p>
                     <br>
                     <p>A Whole-body Motion Planner for Aerial Manipulator Grasping</p>
@@ -296,7 +386,7 @@
                     <br>
                     <p><i>IEEE International Conferenceon Robotics and Automation (ICRA)</i>, 2025</p><br>
                     <p>
-                        <a href="https://fisheep9.github.io/" target="blank">website</a> / <a href="https://arxiv.org/pdf/2501.06122" target="blank">arXiv</a> / <a href="https://github.com/SYSU-HILAB" target="blank">code</a> / <a href="https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
+                        <a href="https://arxiv.org/pdf/2501.06122" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV16Zt5eBEPW/?spm_id_from=333.337.search-card.all.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
                     </p>
                     <br>
                     <p>Proposed an NDOB-based controller for UAV with delta-arm, enhancing agility and achieving millimeter-level precision through disturbance compensation and high-pass filtering.</p>
