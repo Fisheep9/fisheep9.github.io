@@ -80,12 +80,24 @@
     <ul>
         <div style="height:170px;width:fit-content;overflow:auto;background:#FFFFFF;">
             <li>
+                <p style="line-height: 1.5;">[2026/01/21] Our <a
+                            href="https://flyaware.github.io/" target="blank">FlyAware</a> has been accepted by IEEE Robotics and Automation Letters (RA-L)!</p>
+            </li>
+            <li>
+                <p style="line-height: 1.5;">[2025/12/01] Our <a
+                            href="https://ieeexplore.ieee.org/abstract/document/11278699" target="blank">COMET</a> has been accepted by IEEE Robotics and Automation Letters (RA-L)!</p>
+            </li>
+            <li>
                 <p style="line-height: 1.5;">[2025/09/26] Our <a
                             href="https://arxiv.org/pdf/2501.06493" target="blank">Paper</a> has been accepted by IEEE Transactions on Robotics (T-RO)!</p>
             </li>
             <li>
                 <p style="line-height: 1.5;">[2025/09/15] <a
                             href="https://www.sysu.edu.cn/sysuen" target="blank">Sun Yat-sen University</a> <img src="assets/img/sysu_logo.svg" height="20px" style="vertical-align:middle"> Practical Achievements Scholarship, <b>1st Prize</b>.</p>
+            </li>
+            <li>
+                <p style="line-height: 1.5;">[2025/07/18] Our <a
+                            href="https://ieeexplore.ieee.org/abstract/document/11345992" target="blank">AeroThrow</a> has been accepted by IEEE Robotics and Automation Letters (RA-L)!</p>
             </li>
             <li>
                 <p style="line-height: 1.5;">[2025/06/16] Our <a
@@ -149,7 +161,52 @@
         <button class="button" id="button2" onclick="showFullPublications(); selectButton('button2')">Show all papers</button>.
     </p>
     <div id="selected_publications">
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr onmouseout="triforce_stop('flyaware_rep')" onmouseover="triforce_start('flyaware_rep')">
+                <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div>
+                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="flyaware_rep">
+                            <video loop autoplay muted width="400px" style="position: relative; top: -64px; display: block;" >
+                                <source src="assets/video/flyware.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/flyaware.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 0px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
+                </td>
+                
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <b>FlyAware: Inertia-Aware Aerial Manipulation via Vision-Based Estimation and Post-Grasp Adaptation</b>
+                    <br>
+                    <br>
+                    <strong>Biyu Ye</strong>, Na Fan, Zhengping Fan, Weiliang Deng, Hongming Chen, Qifeng Chen and Ximin Lyu<br>
+                    <p><i>IEEE Robotics and Automation Letters (RA-L)</i>, 2026</p><br>
+                    <p>
+                        <a href="https://arxiv.org/abs/2601.22686" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV1J5n1zAEdH/?spm_id_from=333.1387.homepage.video_card.click" target="blank">demo</a>
+                    </p>
+                    <br>
+                    <p>This paper presents an onboard framework for aerial manipulators that enables real-time inertia estimation and adaptive control during grasping tasks.</p>
+                </td>
+            </tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tr onmouseout="triforce_stop('whole_body_rep')" onmouseover="triforce_start('whole_body_rep')">
                 <td style="padding:10px;width:25%;vertical-align:middle">
                     <div>
@@ -282,7 +339,95 @@
         </table>
     </div>
     <div id="full_publications" style="display: none;">
-                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr onmouseout="triforce_stop('flyaware_full')" onmouseover="triforce_start('flyaware_full')">
+                <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div>
+                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="flyaware_full">
+                            <video loop autoplay muted width="400px"  style="position: relative; top: -64px; display: block;">
+                                <source src="assets/video/flyware.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/flyaware.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 0px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
+                </td>
+                
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <b>FlyAware: Inertia-Aware Aerial Manipulation via Vision-Based Estimation and Post-Grasp Adaptation</b>
+                    <br>
+                    <br>
+                    <strong>Biyu Ye</strong>, Na Fan, Zhengping Fan, Weiliang Deng, Hongming Chen, Qifeng Chen and Ximin Lyu<br>
+                    <p><i>IEEE Robotics and Automation Letters (RA-L)</i>, 2026</p><br>
+                    <p>
+                        <a href="https://arxiv.org/pdf/2501.06493" target="blank">arXiv</a> / <a href="https://www.bilibili.com/video/BV1J5n1zAEdH/?spm_id_from=333.1387.homepage.video_card.click" target="blank">demo</a>
+                    </p>
+                    <br>
+                    <p>This paper presents an onboard framework for aerial manipulators that enables real-time inertia estimation and adaptive control during grasping tasks.</p>
+                </td>
+            </tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr onmouseout="triforce_stop('comet_full')" onmouseover="triforce_start('comet_full')">
+                <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div>
+                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="comet_full">
+                            <video loop autoplay muted width="400px" style="position: relative; top: -20px; display: block;">
+                                <source src="assets/video/comet.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/comet.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 10px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <b>COMET: A Dual Swashplate Autonomous Coaxial Bi-copter AAV with High-Maneuverability and Long-Endurance</b>
+                    <br>
+                    <br>
+                    Shuai Wang, Xiaoming Tang, Junning Liang, Haowen Zheng, <strong>Biyu Ye</strong>, Zhaofeng Liu, Fei Gao, Ximin Lyu
+                    <br>
+                    <p><i>IEEE Robotics and Automation Letters (RA-L)</i>, 2025</p><br>
+                    <p>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/11278699" target="blank">paper</a> / <a href="https://www.bilibili.com/video/BV1LcT5zvEwj/?spm_id_from=333.1387.homepage.video_card.click&vd_source=d7812877f06e308360782607df28a3b2" target="blank">demo</a>
+                    </p>
+                    <br>
+                    <p>COMET presents a dual-swashplate coaxial bi-copter AAV that achieves both high maneuverability and long endurance, validated through comprehensive flight experiments.</p>
+                </td>
+            </tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tr onmouseout="triforce_stop('whole_body_full')" onmouseover="triforce_start('whole_body_full')">
                 <td style="padding:10px;width:25%;vertical-align:middle">
                     <div>
@@ -324,6 +469,51 @@
             <tr>&nbsp</tr>
             <tr>&nbsp</tr>
         </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr onmouseout="triforce_stop('aerothrow_full')" onmouseover="triforce_start('aerothrow_full')">
+                <td style="padding:10px;width:25%;vertical-align:middle">
+                    <div>
+                        <div style="opacity: 0; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2 ease-in-out; -webkit-transition: opacity .2 ease-in-out;" id="aerothrow_full">
+                            <video loop autoplay muted width="400px"  style="position: relative; top: -15px; display: block;">
+                                <source src="assets/video/aerothrow.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <img src="assets/img/aerothrow.png" alt="TriForce", style="width: 400px; padding-top:0px; padding-bottom: 0px;">
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        function triforce_start(idName) {
+                            document.getElementById(idName).style.opacity = '1';
+                        }
+                        function triforce_stop(idName) {
+                            document.getElementById(idName).style.opacity = '0';
+                        }
+                        triforce_stop()
+                    </script>
+                </td>
+                
+
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                    <b>AeroThrow: An Autonomous Aerial Throwing System for Precise Payload Delivery</b>
+                    <br>
+                    <br>
+                    Ziliang Li, Hongming Chen, Yiyang Lin, <strong>Biyu Ye</strong>, Zongliang Pan, Ximin Lyu<br>
+                    <p><i>IEEE Robotics and Automation Letters (RA-L)</i>, 2026</p><br>
+                    <p>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/11345992" target="blank">paper</a> / <a href="https://www.bilibili.com/video/BV1JLvwzCEgs/?spm_id_from=333.337.search-card.all.click" target="blank">demo</a>
+                    </p>
+                    <br>
+                    <p>This paper proposes an aerial-manipulator-based autonomous airdrop system that enhances throwing precision and robustness.</p>
+                </td>
+            </tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+            <tr>&nbsp</tr>
+        </table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tr onmouseout="triforce_stop('workspace_full')" onmouseover="triforce_start('workspace_full')">
                 <td style="padding:10px;width:25%;vertical-align:middle">
