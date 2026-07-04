@@ -1,5 +1,7 @@
 
 html {
+    background: #d8d8d8;
+    min-height: 100%;
     text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
@@ -9,14 +11,28 @@ html {
   
   body {
       background: white;
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.34), 0 3px 12px rgba(0, 0, 0, 0.22);
+      box-sizing: border-box;
       font-family: Optima, Georgia, sans-serif;
-      padding: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 42px 52px;
       font-size: .96em;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 1000px;
+      margin: 32px auto;
+      max-width: 1100px;
+      min-height: calc(100vh - 64px);
+      width: calc(100% - 64px);
+  }
+
+  img[src="assets/img/bio.png"] {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.46), 0 2px 7px rgba(0, 0, 0, 0.28);
+      display: block;
+  }
+
+  @media (max-width: 720px) {
+      body {
+          margin: 16px auto;
+          padding: 24px 18px;
+          width: calc(100% - 24px);
+      }
   }
   
    
